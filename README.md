@@ -1,2 +1,0 @@
-# TencilIOS
-Tencil IOS Version
