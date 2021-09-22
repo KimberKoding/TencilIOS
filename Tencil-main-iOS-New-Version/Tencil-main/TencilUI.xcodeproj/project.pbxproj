@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E16DDBB26FAE91900A41135 /* PlayerViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E16DDBA26FAE91900A41135 /* PlayerViewContainer.swift */; };
+		7E3BB9F326A3682E00F18976 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BB9F226A3682E00F18976 /* CategoriesList.swift */; };
+		7EB00A4D26919992005F3212 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB00A4C26919992005F3212 /* ResetPassword.swift */; };
+		7EB00A4F26919FF7005F3212 /* PasswordUpdated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB00A4E26919FF7005F3212 /* PasswordUpdated.swift */; };
+		7EB00A522691DE84005F3212 /* QuestionTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB00A512691DE84005F3212 /* QuestionTab.swift */; };
+		7EB00A542691E575005F3212 /* Questionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB00A532691E575005F3212 /* Questionnaire.swift */; };
+		7ED0D4D126A43D9F00FC574E /* CategoryListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED0D4D026A43D9F00FC574E /* CategoryListCardView.swift */; };
+		7ED0D4D326A455B300FC574E /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED0D4D226A455B300FC574E /* ActivityViewController.swift */; };
+		7ED0D4D526A4574700FC574E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED0D4D426A4574700FC574E /* ProfileView.swift */; };
+		7EFDA4B026EDD80400AB57EC /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDA4AF26EDD80400AB57EC /* TabViewController.swift */; };
+		9D3011E726713A5600C41379 /* TencilUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3011E626713A5600C41379 /* TencilUIApp.swift */; };
+		9D3011EB26713A5900C41379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3011EA26713A5900C41379 /* Assets.xcassets */; };
+		9D3011EE26713A5900C41379 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3011ED26713A5900C41379 /* Preview Assets.xcassets */; };
+		9D3011F626713AE500C41379 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3011F526713AE500C41379 /* LaunchScreen.swift */; };
+		9D3011F82671575600C41379 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3011F72671575600C41379 /* LoginView.swift */; };
+		9D59C7F42686500100EC5181 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C7F32686500100EC5181 /* LoginModel.swift */; };
+		9D59C7F82686515800EC5181 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C7F72686515800EC5181 /* Api.swift */; };
+		9D59C7FB26866AF400EC5181 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 9D59C7FA26866AF400EC5181 /* PopupView */; };
+		9D59C7FE26866FE300EC5181 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C7FD26866FE300EC5181 /* Common.swift */; };
+		9D59C800268672A600EC5181 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C7FF268672A600EC5181 /* LoaderView.swift */; };
+		9D59C8022686762400EC5181 /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C8012686762400EC5181 /* BusinessModel.swift */; };
+		9D59C80426867C8A00EC5181 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C80326867C8A00EC5181 /* CategoriesModel.swift */; };
+		9D59C8072687626D00EC5181 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 9D59C8062687626D00EC5181 /* URLImageStore */; };
+		9D59C8092687626D00EC5181 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9D59C8082687626D00EC5181 /* URLImage */; };
+		9D59C80B2687713100EC5181 /* RegistrationLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C80A2687713100EC5181 /* RegistrationLogin.swift */; };
+		9D59C80D2688951500EC5181 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59C80C2688951500EC5181 /* DetailsView.swift */; };
+		9D674CFE26720595006A9F04 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674CFD26720595006A9F04 /* RegisterView.swift */; };
+		9D674D0026720C9F006A9F04 /* ActivateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674CFF26720C9F006A9F04 /* ActivateView.swift */; };
+		9D674D0226720F63006A9F04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D0126720F63006A9F04 /* HomeView.swift */; };
+		9D674D0526722426006A9F04 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D0426722426006A9F04 /* CardView.swift */; };
+		9D674D0826723B34006A9F04 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D0726723B34006A9F04 /* ForgotPasswordView.swift */; };
+		9D674D0C26725539006A9F04 /* SlideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D0B26725539006A9F04 /* SlideMenuView.swift */; };
+		9D674D0E2672554C006A9F04 /* SlideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D0D2672554C006A9F04 /* SlideMenuHeader.swift */; };
+		9D674D102672555D006A9F04 /* SlideMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D0F2672555D006A9F04 /* SlideMenuItems.swift */; };
+		9D674D12267283FA006A9F04 /* StaticCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D11267283FA006A9F04 /* StaticCardView.swift */; };
+		9D674D142672846A006A9F04 /* HorizontalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D132672846A006A9F04 /* HorizontalCardView.swift */; };
+		9D674D1726728CA6006A9F04 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D1626728CA6006A9F04 /* Color+Ext.swift */; };
+		9D674D1926729760006A9F04 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D1826729760006A9F04 /* String+Ext.swift */; };
+		9D674D1B2672B021006A9F04 /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D674D1A2672B021006A9F04 /* Image+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E16DDBA26FAE91900A41135 /* PlayerViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewContainer.swift; sourceTree = "<group>"; };
+		7E3BB9F226A3682E00F18976 /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
+		7EB00A4C26919992005F3212 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		7EB00A4E26919FF7005F3212 /* PasswordUpdated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUpdated.swift; sourceTree = "<group>"; };
+		7EB00A512691DE84005F3212 /* QuestionTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTab.swift; sourceTree = "<group>"; };
+		7EB00A532691E575005F3212 /* Questionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questionnaire.swift; sourceTree = "<group>"; };
+		7ED0D4D026A43D9F00FC574E /* CategoryListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListCardView.swift; sourceTree = "<group>"; };
+		7ED0D4D226A455B300FC574E /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		7ED0D4D426A4574700FC574E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7EFDA4AF26EDD80400AB57EC /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		9D3011E326713A5600C41379 /* TencilUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TencilUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3011E626713A5600C41379 /* TencilUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencilUIApp.swift; sourceTree = "<group>"; };
+		9D3011EA26713A5900C41379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D3011ED26713A5900C41379 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D3011EF26713A5900C41379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3011F526713AE500C41379 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		9D3011F72671575600C41379 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9D59C7F32686500100EC5181 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		9D59C7F72686515800EC5181 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9D59C7FD26866FE300EC5181 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		9D59C7FF268672A600EC5181 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		9D59C8012686762400EC5181 /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
+		9D59C80326867C8A00EC5181 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		9D59C80A2687713100EC5181 /* RegistrationLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationLogin.swift; sourceTree = "<group>"; };
+		9D59C80C2688951500EC5181 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		9D674CFD26720595006A9F04 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9D674CFF26720C9F006A9F04 /* ActivateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateView.swift; sourceTree = "<group>"; };
+		9D674D0126720F63006A9F04 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9D674D0426722426006A9F04 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9D674D0726723B34006A9F04 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		9D674D0B26725539006A9F04 /* SlideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuView.swift; sourceTree = "<group>"; };
+		9D674D0D2672554C006A9F04 /* SlideMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuHeader.swift; sourceTree = "<group>"; };
+		9D674D0F2672555D006A9F04 /* SlideMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuItems.swift; sourceTree = "<group>"; };
+		9D674D11267283FA006A9F04 /* StaticCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCardView.swift; sourceTree = "<group>"; };
+		9D674D132672846A006A9F04 /* HorizontalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCardView.swift; sourceTree = "<group>"; };
+		9D674D1626728CA6006A9F04 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		9D674D1826729760006A9F04 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		9D674D1A2672B021006A9F04 /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D3011E026713A5600C41379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D59C8072687626D00EC5181 /* URLImageStore in Frameworks */,
+				9D59C8092687626D00EC5181 /* URLImage in Frameworks */,
+				9D59C7FB26866AF400EC5181 /* PopupView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EB00A502691C002005F3212 /* password reset */ = {
+			isa = PBXGroup;
+			children = (
+				9D674D0726723B34006A9F04 /* ForgotPasswordView.swift */,
+				7EB00A4C26919992005F3212 /* ResetPassword.swift */,
+				7EB00A4E26919FF7005F3212 /* PasswordUpdated.swift */,
+			);
+			path = "password reset";
+			sourceTree = "<group>";
+		};
+		9D3011DA26713A5600C41379 = {
+			isa = PBXGroup;
+			children = (
+				9D3011E526713A5600C41379 /* TencilUI */,
+				9D3011E426713A5600C41379 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D3011E426713A5600C41379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D3011E326713A5600C41379 /* TencilUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D3011E526713A5600C41379 /* TencilUI */ = {
+			isa = PBXGroup;
+			children = (
+				9D59C7FC26866FD200EC5181 /* Common */,
+				9D59C7F62686505F00EC5181 /* Services */,
+				9D59C7F226864D6400EC5181 /* ModelClasses */,
+				9D674D1526728C67006A9F04 /* Extensions */,
+				9D674D0326722418006A9F04 /* Views */,
+				9D674D0626723AD7006A9F04 /* ViewControllers */,
+				9D3011E626713A5600C41379 /* TencilUIApp.swift */,
+				9D3011EA26713A5900C41379 /* Assets.xcassets */,
+				9D3011EF26713A5900C41379 /* Info.plist */,
+				9D3011EC26713A5900C41379 /* Preview Content */,
+			);
+			path = TencilUI;
+			sourceTree = "<group>";
+		};
+		9D3011EC26713A5900C41379 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D3011ED26713A5900C41379 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D59C7F226864D6400EC5181 /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				9D59C7F32686500100EC5181 /* LoginModel.swift */,
+				9D59C8012686762400EC5181 /* BusinessModel.swift */,
+				9D59C80326867C8A00EC5181 /* CategoriesModel.swift */,
+				9D59C80A2687713100EC5181 /* RegistrationLogin.swift */,
+			);
+			path = ModelClasses;
+			sourceTree = "<group>";
+		};
+		9D59C7F52686504500EC5181 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				9D3011F72671575600C41379 /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		9D59C7F62686505F00EC5181 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9D59C7F72686515800EC5181 /* Api.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9D59C7FC26866FD200EC5181 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9D59C7FD26866FE300EC5181 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9D674D0326722418006A9F04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D674D0A26725525006A9F04 /* SlideMenu */,
+				9D674D0426722426006A9F04 /* CardView.swift */,
+				9D674D11267283FA006A9F04 /* StaticCardView.swift */,
+				9D674D132672846A006A9F04 /* HorizontalCardView.swift */,
+				9D59C7FF268672A600EC5181 /* LoaderView.swift */,
+				7ED0D4D026A43D9F00FC574E /* CategoryListCardView.swift */,
+				7E16DDBA26FAE91900A41135 /* PlayerViewContainer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D674D0626723AD7006A9F04 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D3011F526713AE500C41379 /* LaunchScreen.swift */,
+				9D59C7F52686504500EC5181 /* LoginView */,
+				9D674CFD26720595006A9F04 /* RegisterView.swift */,
+				9D674CFF26720C9F006A9F04 /* ActivateView.swift */,
+				9D674D0126720F63006A9F04 /* HomeView.swift */,
+				7EB00A502691C002005F3212 /* password reset */,
+				9D59C80C2688951500EC5181 /* DetailsView.swift */,
+				7EB00A512691DE84005F3212 /* QuestionTab.swift */,
+				7EB00A532691E575005F3212 /* Questionnaire.swift */,
+				7E3BB9F226A3682E00F18976 /* CategoriesList.swift */,
+				7ED0D4D226A455B300FC574E /* ActivityViewController.swift */,
+				7ED0D4D426A4574700FC574E /* ProfileView.swift */,
+				7EFDA4AF26EDD80400AB57EC /* TabViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9D674D0A26725525006A9F04 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9D674D0B26725539006A9F04 /* SlideMenuView.swift */,
+				9D674D0D2672554C006A9F04 /* SlideMenuHeader.swift */,
+				9D674D0F2672555D006A9F04 /* SlideMenuItems.swift */,
+			);
+			path = SlideMenu;
+			sourceTree = "<group>";
+		};
+		9D674D1526728C67006A9F04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D674D1626728CA6006A9F04 /* Color+Ext.swift */,
+				9D674D1826729760006A9F04 /* String+Ext.swift */,
+				9D674D1A2672B021006A9F04 /* Image+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D3011E226713A5600C41379 /* TencilUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D3011F226713A5900C41379 /* Build configuration list for PBXNativeTarget "TencilUI" */;
+			buildPhases = (
+				9D3011DF26713A5600C41379 /* Sources */,
+				9D3011E026713A5600C41379 /* Frameworks */,
+				9D3011E126713A5600C41379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TencilUI;
+			packageProductDependencies = (
+				9D59C7FA26866AF400EC5181 /* PopupView */,
+				9D59C8062687626D00EC5181 /* URLImageStore */,
+				9D59C8082687626D00EC5181 /* URLImage */,
+			);
+			productName = TencilUI;
+			productReference = 9D3011E326713A5600C41379 /* TencilUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D3011DB26713A5600C41379 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9D3011E226713A5600C41379 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 9D3011DE26713A5600C41379 /* Build configuration list for PBXProject "TencilUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D3011DA26713A5600C41379;
+			packageReferences = (
+				9D59C7F926866AF400EC5181 /* XCRemoteSwiftPackageReference "PopupView" */,
+				9D59C8052687626D00EC5181 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
+			productRefGroup = 9D3011E426713A5600C41379 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D3011E226713A5600C41379 /* TencilUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D3011E126713A5600C41379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3011EE26713A5900C41379 /* Preview Assets.xcassets in Resources */,
+				9D3011EB26713A5900C41379 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D3011DF26713A5600C41379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D59C7F82686515800EC5181 /* Api.swift in Sources */,
+				9D674D0526722426006A9F04 /* CardView.swift in Sources */,
+				9D674D1726728CA6006A9F04 /* Color+Ext.swift in Sources */,
+				7E16DDBB26FAE91900A41135 /* PlayerViewContainer.swift in Sources */,
+				7E3BB9F326A3682E00F18976 /* CategoriesList.swift in Sources */,
+				9D3011F82671575600C41379 /* LoginView.swift in Sources */,
+				9D674D1926729760006A9F04 /* String+Ext.swift in Sources */,
+				7EFDA4B026EDD80400AB57EC /* TabViewController.swift in Sources */,
+				9D59C80D2688951500EC5181 /* DetailsView.swift in Sources */,
+				7EB00A4F26919FF7005F3212 /* PasswordUpdated.swift in Sources */,
+				9D674D0826723B34006A9F04 /* ForgotPasswordView.swift in Sources */,
+				9D674CFE26720595006A9F04 /* RegisterView.swift in Sources */,
+				9D674D12267283FA006A9F04 /* StaticCardView.swift in Sources */,
+				9D59C8022686762400EC5181 /* BusinessModel.swift in Sources */,
+				9D59C80426867C8A00EC5181 /* CategoriesModel.swift in Sources */,
+				9D3011E726713A5600C41379 /* TencilUIApp.swift in Sources */,
+				7EB00A542691E575005F3212 /* Questionnaire.swift in Sources */,
+				7EB00A522691DE84005F3212 /* QuestionTab.swift in Sources */,
+				7ED0D4D326A455B300FC574E /* ActivityViewController.swift in Sources */,
+				9D59C7F42686500100EC5181 /* LoginModel.swift in Sources */,
+				9D674D0E2672554C006A9F04 /* SlideMenuHeader.swift in Sources */,
+				7ED0D4D126A43D9F00FC574E /* CategoryListCardView.swift in Sources */,
+				9D59C80B2687713100EC5181 /* RegistrationLogin.swift in Sources */,
+				9D674D1B2672B021006A9F04 /* Image+Ext.swift in Sources */,
+				9D674D0226720F63006A9F04 /* HomeView.swift in Sources */,
+				9D674D102672555D006A9F04 /* SlideMenuItems.swift in Sources */,
+				7ED0D4D526A4574700FC574E /* ProfileView.swift in Sources */,
+				9D3011F626713AE500C41379 /* LaunchScreen.swift in Sources */,
+				9D59C7FE26866FE300EC5181 /* Common.swift in Sources */,
+				9D674D0026720C9F006A9F04 /* ActivateView.swift in Sources */,
+				9D59C800268672A600EC5181 /* LoaderView.swift in Sources */,
+				7EB00A4D26919992005F3212 /* ResetPassword.swift in Sources */,
+				9D674D142672846A006A9F04 /* HorizontalCardView.swift in Sources */,
+				9D674D0C26725539006A9F04 /* SlideMenuView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9D3011F026713A5900C41379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D3011F126713A5900C41379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D3011F326713A5900C41379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TencilUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 3P3J8AFD59;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TencilUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Qaptive-Tech.TencilUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D3011F426713A5900C41379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TencilUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 3P3J8AFD59;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TencilUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Qaptive-Tech.TencilUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D3011DE26713A5600C41379 /* Build configuration list for PBXProject "TencilUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3011F026713A5900C41379 /* Debug */,
+				9D3011F126713A5900C41379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D3011F226713A5900C41379 /* Build configuration list for PBXNativeTarget "TencilUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3011F326713A5900C41379 /* Debug */,
+				9D3011F426713A5900C41379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D59C7F926866AF400EC5181 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		9D59C8052687626D00EC5181 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D59C7FA26866AF400EC5181 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D59C7F926866AF400EC5181 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+		9D59C8062687626D00EC5181 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D59C8052687626D00EC5181 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+		9D59C8082687626D00EC5181 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D59C8052687626D00EC5181 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9D3011DB26713A5600C41379 /* Project object */;
+}
