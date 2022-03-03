@@ -1,0 +1,202 @@
+//
+//  Questionnaire.swift
+//  TencilUI
+//
+//  Created by Chandra Mohan on 04/07/21.
+//
+
+import SwiftUI
+
+struct Questionnaire: View {
+    @State var showCompletionPopUp = false
+    @Binding var fromHome : Bool
+    @State var questions = ["Q1: Where Do You Live?",
+                            "Q2: How Old Are You?",
+                            "Q3: What Gender Are You?",
+                            "Q4: Which Ethic Group Best  Describes You?",
+                            "Q5: What Is Your Favourite Subjects?",
+                            "Q6: What Is Your Favourite Hobby?",
+                            "Q7: What Is Your Favourite Sport?",
+                            "Q8: What Is Your Favourite Social Media?",
+                            "Q9: What Is Your Favourite Music Genre?",
+                            "Q10: What Is Your Favourite Console?",
+                            "Q11: What statement best describes you?",
+                            "Q12: What do you want to do after you leave school?",
+                            "Q13: What Career Are You Most Interested In?"
+                        ]
+    @State var answers = [
+        ["Wales", "England", "Scotland", "Northern Ireland", "Other" ],
+        [ "13-14", "15-16", "16-17", "18+", "Prefer not to say"],
+        ["Male", "Female", "Others"],
+        ["White", "Asian", "Black", "Mixed Race", "Other", "Prefer Not To Say"],
+        ["Humanities", "Sciences", "Social Sciences", "Languages", "Mathematics"],
+        ["Sports",
+         "Social Media",
+         "Music",
+         "Gaming",
+         "Technology",
+         "Arts and Design",
+         "Other"],
+        ["Rugby",
+         "Football",
+         "Cricket",
+         "Golf",
+         "Hiking",
+         "Swimming",
+         "Ballet",
+         "Other"],
+        ["Facebook",
+         "Twitter",
+         "TikTok",
+         "Instagram",
+         "Snapchat",
+         "Youtube",
+         "Linkedin",
+         "Other"],
+        ["Hip Hop",
+         "Pop Music",
+         "House Music",
+         "Techno",
+         "Jazz",
+         "Rock",
+         "Heavy Metal",
+         "Other"],
+        ["Playstation",
+         "Xbox",
+         "PC",
+         "Nintendo",
+         "Other",
+         "None"],
+        [ "I Am Passionate About My Work",
+          "I Am Highly Organised",
+          "I Am Ambitious And Driven",
+          "I am a People Person",
+          "Im a Natural Leader",
+          "I am Results Orientated"],
+        [ "University",
+          "Apprenticeship",
+          "Full-Time Work",
+          "Part-Time Work",
+          "Travelling",
+          "I am Results Orientated"],
+        ["Coding"]
+        
+    ]
+    @State var categoryModelArray = [Category]()
+    @State var categoryNames = [String]()
+    var selectedCategoryID = Int()
+    @State var selectedTab = 0
+    @State var showLogin = false
+    var body: some View {
+        NavigationView {
+            VStack{
+                TabView(selection: $selectedTab,
+                        content:  {
+                            ForEach(0...12,id : \.self){ index in
+                                if index != 12{
+                                    QuestionTab(question: questions[index], answers: answers[index])
+                                }
+                                else{
+                                    QuestionTab(question: questions[index], answers: categoryNames,allCategories: categoryModelArray)
+                                }
+                            }
+                        })
+                .tabViewStyle(PageTabViewStyle())
+                HStack{
+                    Button(action: {
+                        withAnimation {
+                            selectedTab -= 1
+                        }
+                    }, label: {
+                        if selectedTab > 0{
+                            CustomButton(width: 150, height: 60, title: .previous.uppercased())
+                        }
+                    })
+                    
+                    Button(action: {
+                        withAnimation {
+                            if selectedTab < 12{
+                                selectedTab += 1
+                            }
+                            else{
+                                UserDefaults.standard.setValue(true, forKey: String.userDefaultKeys.questionnaireCompleted)
+                                if fromHome{
+                                    showCompletionPopUp = true
+                                    fromHome = false
+                                }
+                                else{
+                                    showLogin = true
+                                }
+                            }
+                        }
+                    }, label: {
+                        if selectedTab < 12{
+                            CustomButton(width: 150, height: 60, title: .next.uppercased())
+                        }
+                        else{
+                            CustomButton(width: 150, height: 60, title: .submit.uppercased())
+                        }
+                        
+                    })
+                    .padding()
+                }
+                Spacer()
+            }
+            .fullScreenCover(isPresented: $showLogin, content: {
+                LoginView(email: "", password: "", homeView: false, registerView: false, activateView: false, forgotPasswordView: false, isShowingPopUp: false, isLoading: false)
+            })
+            .navigationBarItems(trailing: Button(action: {
+                UserDefaults.standard.setValue(false, forKey: String.userDefaultKeys.questionnaireCompleted)
+                if fromHome{
+                    fromHome = false
+                }
+                else{
+                    showLogin = true
+                }
+            }, label: {
+                if fromHome{
+                    Text("")
+                        .foregroundColor(.black)
+                }
+                else{
+                    Text("Skip")
+                        .foregroundColor(.black)
+                }
+                
+            }))
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear(){
+            Api().getCategories { categories in
+                self.categoryModelArray = categories.categories
+                self.categoryNames = self.categoryModelArray.compactMap({$0.name})
+            }
+
+        }
+        .popup(isPresented: $showCompletionPopUp, type: .default, position: .top, animation: .easeIn, autohideIn: 3, dragToDismiss: true, closeOnTap: true, closeOnTapOutside: false) {
+            showCompletionPopUp = false
+        } view: {
+            ZStack{
+                Color.primary
+                HStack{
+                    Image.checkMark
+                        .resizable()
+                        .frame(width: 25, height: 25, alignment: .center)
+                        .foregroundColor(.white)
+                    Text(String.qaCompletionText)
+                        .foregroundColor(.white)
+                }
+            }
+            .frame(height: 80, alignment: .center)
+            .cornerRadius(10)
+            .padding()
+        }
+    }
+}
+
+struct Questionnaire_Previews: PreviewProvider {
+    static var previews: some View {
+        Questionnaire(fromHome: Binding.constant(false))
+        //HomeView()
+    }
+}
